@@ -1,0 +1,97 @@
+.shoppingcontainer .recipe1 {
+ width: 95%;
+ background-color: #F3AFAF;
+ border-radius: 10px;
+ position: relative;
+}
+
+.heading {
+ display: flex;
+ text-align: center;
+}
+
+.icon {
+ position: absolute;
+ top: 0;
+ right: 0;
+ padding: 2rem 2rem 0 0;
+}
+
+.icon img {
+ margin-right: 1.5rem;
+}
+
+.recipe1 ul {
+ list-style: none;
+ padding-left: 1rem;
+ padding-bottom: 1rem;
+}
+
+.recipe1 li {
+ padding-bottom: 0.7rem;
+}
+
+/* Style the round checkbox container */
+.round-checkbox input[type="checkbox"] {
+ display: none;
+}
+
+.round-checkbox .checkmark {
+ display: inline-block;
+ width: 0.6rem;
+ height: 0.6rem;
+ border-radius: 50%;
+ border: 2px solid #BE2424;
+ cursor: pointer;
+ position: relative;
+ margin-right: 1rem;
+}
+
+/* Style the round checkbox when it's checked */
+.round-checkbox input[type="checkbox"]:checked+.checkmark::before {
+ content: "";
+ display: block;
+ width: 10px;
+ height: 10px;
+ background-color: #FF8686;
+ border-radius: 50%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+input:hover {
+ cursor: pointer;
+}
+
+.recipe1 h2 {
+ padding-top: 1rem;
+ padding-left: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+ .heading h2 {
+  font-size: 1rem;
+  padding-top: 3rem;
+  padding-left: 0;
+ }
+
+ .heading {
+  display: block;
+ }
+
+ .icon img {
+  margin-right: 1rem;
+  width: 1rem;
+  margin-top: 1rem;
+ }
+
+ .icon {
+  padding: 0;
+ }
+
+ ul {
+  margin-top: 1rem;
+ }
+}

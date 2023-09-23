@@ -1,0 +1,82 @@
+.carousel-container {
+ width: 35%;
+ height: auto;
+ margin: 0 auto;
+}
+
+.custom-carousel {
+ margin: 0 auto;
+ display: flex;
+}
+
+.card {
+ width: 90%;
+ margin-bottom: 2rem;
+}
+
+.cardwrap {
+ display: flex;
+}
+
+.card .description {
+ max-width: 100%;
+ width: 100%;
+ bottom: 0;
+ background-color: #070A52;
+ color: white;
+ border-radius: 10px;
+}
+
+.description h3,
+h4 {
+ margin: 0;
+ padding: 0.3rem 0;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+ opacity: 1;
+}
+
+
+.carousel .control-prev.control-arrow:before {
+ border-right: 0.7rem solid #070A52;
+}
+
+.carousel .control-next.control-arrow:before {
+ border-left: 0.7rem solid #070A52;
+}
+
+.carousel.carousel-slider .control-arrow {
+ margin-right: 1.7rem;
+}
+
+.carousel .control-dots {
+ width: 90%;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+
+.carousel .control-dots .dot {
+ background: #070A52;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+ .carousel-container {
+  width: 60%;
+  text-align: center;
+  justify-content: center;
+ }
+
+ .carousel.carousel-slider .control-arrow {
+  margin-right: 1rem;
+ }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ .carousel-container {
+  width: 50%;
+ }
+}
